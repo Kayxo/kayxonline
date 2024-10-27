@@ -8,6 +8,12 @@ import * as $api_joke from "./routes/api/joke.ts";
 import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $DarkModeToggle from "./islands/DarkModeToggle.tsx";
+import * as $GitHubPreview from "./islands/GitHubPreview.tsx";
+import * as $LinkPreview from "./islands/LinkPreview.tsx";
+import * as $OsuPreview from "./islands/OsuPreview.tsx";
+import * as $TwitchPreview from "./islands/TwitchPreview.tsx";
+import * as $TwitterPreview from "./islands/TwitterPreview.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -20,6 +26,12 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./islands/DarkModeToggle.tsx": $DarkModeToggle,
+    "./islands/GitHubPreview.tsx": $GitHubPreview,
+    "./islands/LinkPreview.tsx": $LinkPreview,
+    "./islands/OsuPreview.tsx": $OsuPreview,
+    "./islands/TwitchPreview.tsx": $TwitchPreview,
+    "./islands/TwitterPreview.tsx": $TwitterPreview,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
